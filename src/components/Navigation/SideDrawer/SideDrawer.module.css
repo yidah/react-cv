@@ -1,0 +1,30 @@
+/*Mobile */
+.SideDrawer{
+    position: fixed;
+    width: 280px;
+    /* max-width: 60px; */
+    height: 100%;
+    left:0;
+    top:0;
+    z-index: 200;
+    background-color: #9B8338;
+    padding:32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3 ease-out; /*transform(what we want to animate) 0.3(over which time we want to animate) ease-out(starts fast and slows towards the end*/
+}
+
+/*Bigger devices*/
+@media (min-width:500px){
+    .SideDrawer{
+        display: none;
+    }
+
+}
+
+.Open{
+    transform: translateX(0); /*original position of the .SideDrawer*/
+}
+
+.Close{
+    transform: translateX(-100%); /*to the left where we cannot see it*/
+}

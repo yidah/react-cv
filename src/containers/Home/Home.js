@@ -4,7 +4,8 @@ class Home extends Component{
     render(){
         return(
             <div>
-                Home
+                <span>Hi I am Yidah Aguirre</span>
+                <span>I am a front-end developer</span>
             </div>
         )
     }

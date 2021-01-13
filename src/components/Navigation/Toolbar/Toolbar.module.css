@@ -1,0 +1,25 @@
+.Toolbar{
+    height: 56px;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #ffc000;
+    display: flex; /* All the items in the tool bar are aligned next to each other */
+    justify-content: space-between; /* Flexbox property how element wrapped by toolbar should spread out, in this case available space is filled with the elements */
+    align-items: center; /* how they should be aligned vertically */
+    padding: 0 20px;
+    box-sizing: border-box; /* include padding and border */
+    z-index:90; /*specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.*/
+    color: #9B8338;
+}
+
+.Toolbar nav{
+    height: 100%; 
+}
+
+@media (min-width: 500px) {
+    .Toolbar {
+      justify-content: flex-end;
+    }
+  }
