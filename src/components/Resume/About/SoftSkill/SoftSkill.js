@@ -1,5 +1,5 @@
 import React from 'react';
-import Auxi from '../../hoc/Auxi';
+import Auxi from '../../../../hoc/Auxi';
 
 const softSkill = (props) => {
   return (

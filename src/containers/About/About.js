@@ -1,7 +1,7 @@
 import React,{ Component } from "react";
 import Auxi from '../../hoc/Auxi';
-import SoftSkill from '../../components/SoftSkill/SoftSkill';
-import Skill from '../../components/Skill/Skill';
+import SoftSkill from '../../components/Resume/About/SoftSkill/SoftSkill';
+import Skill from '../../components/Resume/About/Skill/Skill';
 import Me from '../../assets/images/me.png';
 
 class About extends Component{

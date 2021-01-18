@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import Project from '../../components/Project/Project';
+import Project from '../../components/Resume/Porfolio/Project/Project';
 import BurgerBuilder from '../../assets/images/react-burger-builder.png';
 
 class Portfolio extends Component{
