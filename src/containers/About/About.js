@@ -1,5 +1,4 @@
 import React,{ Component } from "react";
-import Auxi from '../../hoc/Auxi';
 import SoftSkill from '../../components/Resume/About/SoftSkill/SoftSkill';
 import Skill from '../../components/Resume/About/Skill/Skill';
 import Me from '../../assets/images/me.png';
@@ -7,14 +6,14 @@ import Me from '../../assets/images/me.png';
 class About extends Component{
     render(){
         return(
-            <Auxi>
+            <>
                 <SoftSkill imgSrc="" imgAlt=""
                                  title="Dynamic"
                                  desc="soy muy dinamico"/>
                 <img src={Me} alt="me"/>
 
                 <Skill skill="JavaScript" percentage="100%"/>
-            </Auxi>
+            </>
         )
     }
 }

@@ -1,0 +1,41 @@
+.Home {
+    background-color: #ffc000;
+    height: 100%;
+    width: 100%;
+    /* position: fixed; */
+    
+}
+/* .Home {
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: inline-block;
+} */
+
+/* .Me {
+    position: fixed;
+    top: 40%;
+    left: 25%;
+} */
+
+/* .Line {
+    background-color:#ccc;
+    position: fixed;
+    top: 45%;
+    left: 25%;
+    display: inline-block;
+    height: 4px;
+    width: 300px;
+}
+
+.MyCareer {
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: inline-block;
+} */
+
+@media(min-with:40rem){
+
+}

@@ -7,9 +7,10 @@ import About from './containers/About/About';
 import Portfolio from './containers/Portfolio/Portfolio';
 
 
+
 function App() {
   return (
-    <div>
+    <>
       <Layout>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>
@@ -20,7 +21,7 @@ function App() {
         <Portfolio/>
         <Contact/> */}
       </Layout>
-    </div>
+    </>
   );
 }
 
