@@ -2,56 +2,56 @@
     background-color: #ffc000;
     height: 100%;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700;
     
 }
 
 .Me {
     position: relative;
-    display: inline-block;
+    top:10%;
+    left:2%;
     width: 300px;
-    animation:me-intro 4s normal forwards;
+    animation:me-intro 3s normal forwards; 
 }
 
 .Line {
     position: relative;
-    display: inline-block;
-    animation: line-intro 1s 3s normal forwards;
-    height: 4px;
+    top:41%;
+    left:10%;
     width: 300px;
+    height: 4px;
+    animation: line-intro 1s 3s normal forwards; 
 }
 
 .MyCareer {
     position: relative;
-    display: inline-block;
+    top:90%;
+    left:10%;
     width: 300px;
-    animation: mycareer-intro 4s normal forwards;
-}
+    animation: mycareer-intro 3s normal forwards; 
+} 
+
+/* menor 600px mobile
+menor 840px tablet
+greater 840px  */
 
 @media(min-with:40rem){
 
 }
 
 @keyframes me-intro {
-    0%   {background-color:#ffc000; left:0px; top:60px;}
-    25%  {background-image:linear-gradient(to left, #ccc , #ffc000); left:800px; top:60px;}
-    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:800px; top:300px;}
-    75%  {background-image:linear-gradient(to right #ccc , #ffc000);  left:100px; top:300px;}
-    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:800px; top:300px;}
+    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:2%; top:10%;}
+    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:10%; top:40%;}
   }
 
   @keyframes line-intro {
-    0%   {background-color:#ffc000; left:1000px; top:500px;}
-    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:500px; top:320px;}
+    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:10%; top:41%;}
   }
 
   @keyframes mycareer-intro {
-    0%   {background-color:#ffc000; left:1000px; top:800px; }
-    25%  {background-image:linear-gradient(to right, #ccc , #ffc000); left:200px; top:800px;}
-    50%  {background-image:linear-gradient(to bottom, #ccc , #ffc000);  left:200px; top:350px;}
-    75%  {background-image:linear-gradient(to left #ccc , #ffc000);  left:1000px; top:350px;}
-    100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:200px; top:350px;}
-  }
+    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:10%; top:90%;}
+    100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:10%; top:42%;}
+  } 
 
 
