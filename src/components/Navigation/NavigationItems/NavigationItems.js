@@ -17,19 +17,6 @@ const navigationItems = () =>(
         <li className={classes.NavigationItem}>
             <NavLink to="/contact">Contact</NavLink>
         </li>
-        {/* <li className={classes.NavigationItem}>
-            <a href="/"
-               className={classes.active}>Home</a>
-        </li>
-        <li className={classes.NavigationItem}>
-            <a href="/about">About</a>
-        </li>
-        <li className={classes.NavigationItem}>
-            <a href="/portfolio">Portfolio</a>
-        </li>       
-        <li className={classes.NavigationItem}>
-            <a href="/contact">Contact</a>
-        </li> */}
     </ul>
 )
 export default navigationItems;

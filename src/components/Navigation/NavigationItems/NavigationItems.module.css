@@ -1,59 +1,59 @@
-.NavigationItems{
-    margin:0;
-    padding:0;
-    list-style: none;
-    display: flex; /*align items next to each other*/
-    flex-flow: column;
-    align-items: center;
-    height: 100%; 
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; /*align items next to each other*/
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
 }
 
-.NavigationItem{
-    margin:10px 0;
-    box-sizing: border-box; /* width and height include border and padding*/
-    display: block; /*align items next to each other*/
-    width: 100%; 
+.NavigationItem {
+  margin: 10px 0;
+  box-sizing: border-box; /* width and height include border and padding*/
+  display: block; /*align items next to each other*/
+  width: 100%;
 }
 
 .NavigationItem a {
-    color: white;
-    text-decoration: none;
-    width: 100%; 
-    box-sizing: border-box;
-    display: block; /*so that height has an effect.*/
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block; /*so that height has an effect.*/
 }
 
 .NavigationItem a:hover,  /* hovered links*/
 .NavigationItem a:active, /* active links*/
-.NavigationItem a.active { /* links which are active class*/
-    color:  #ffc000;
+.NavigationItem a.active {
+  /* links which are active class*/
+  color: #ffc000;
 }
 
-@media(min-width:500px){
-.NavigationItems{
+@media (min-width: 500px) {
+  .NavigationItems {
     flex-flow: row;
+  }
 
-}
-
-.NavigationItem{
-    margin:0;
+  .NavigationItem {
+    margin: 0;
     display: flex; /*align items next to each other*/
     height: 100%; /*take the full height of the toolbar*/
     width: auto;
     align-items: center;
-}
+  }
 
-.NavigationItem a {
+  .NavigationItem a {
     color: white;
     height: 100%; /*take the full height of the toolbar*/
     padding: 16px 10px;
     border-bottom: 4px solid transparent;
-}
+  }
 
-.NavigationItem a:hover,  /* hovered links*/
+  .NavigationItem a:hover,  /* hovered links*/
 .NavigationItem a:active, /* active links*/
-.NavigationItem a.active { /* links which are active class*/
-    color: #9B8338;
-}
-    
+.NavigationItem a.active {
+    /* links which are active class*/
+    color: #9b8338;
+  }
 }

@@ -2,40 +2,56 @@
     background-color: #ffc000;
     height: 100%;
     width: 100%;
-    /* position: fixed; */
-    
-}
-/* .Home {
     font-size: 1.3rem;
     font-weight: 700;
-    display: inline-block;
-} */
+    
+}
 
-/* .Me {
-    position: fixed;
-    top: 40%;
-    left: 25%;
-} */
-
-/* .Line {
-    background-color:#ccc;
-    position: fixed;
-    top: 45%;
-    left: 25%;
+.Me {
+    position: relative;
     display: inline-block;
+    width: 300px;
+    animation:me-intro 4s normal forwards;
+}
+
+.Line {
+    position: relative;
+    display: inline-block;
+    animation: line-intro 1s 3s normal forwards;
     height: 4px;
     width: 300px;
 }
 
 .MyCareer {
-    position: fixed;
-    top: 50%;
-    left: 25%;
-    font-size: 1.3rem;
-    font-weight: 700;
+    position: relative;
     display: inline-block;
-} */
+    width: 300px;
+    animation: mycareer-intro 4s normal forwards;
+}
 
 @media(min-with:40rem){
 
 }
+
+@keyframes me-intro {
+    0%   {background-color:#ffc000; left:0px; top:60px;}
+    25%  {background-image:linear-gradient(to left, #ccc , #ffc000); left:800px; top:60px;}
+    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:800px; top:300px;}
+    75%  {background-image:linear-gradient(to right #ccc , #ffc000);  left:100px; top:300px;}
+    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:800px; top:300px;}
+  }
+
+  @keyframes line-intro {
+    0%   {background-color:#ffc000; left:1000px; top:500px;}
+    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:500px; top:320px;}
+  }
+
+  @keyframes mycareer-intro {
+    0%   {background-color:#ffc000; left:1000px; top:800px; }
+    25%  {background-image:linear-gradient(to right, #ccc , #ffc000); left:200px; top:800px;}
+    50%  {background-image:linear-gradient(to bottom, #ccc , #ffc000);  left:200px; top:350px;}
+    75%  {background-image:linear-gradient(to left #ccc , #ffc000);  left:1000px; top:350px;}
+    100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:200px; top:350px;}
+  }
+
+
