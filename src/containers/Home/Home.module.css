@@ -36,10 +36,6 @@
 menor 840px tablet
 greater 840px  */
 
-@media(min-with:40rem){
-
-}
-
 @keyframes me-intro {
     50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:2%; top:10%;}
     100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:10%; top:40%;}
@@ -53,5 +49,41 @@ greater 840px  */
     50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:10%; top:90%;}
     100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:10%; top:42%;}
   } 
+
+  /* Greater than 640 */
+@media(min-width:40rem){
+  .Home {
+    font-size: 1.7rem;   
+  }
+  .Line {
+    position: relative;
+    top:41%;
+    left:80%;
+    width: 360px;
+    height: 4px;
+    animation: line-intro 1s 3s normal forwards; 
+  }
+  .MyCareer {
+    left: 70%;
+    top:90%;
+    width: 400px;
+  } 
+
+  @keyframes me-intro {
+    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:2%; top:10%;}
+    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:40%; top:40%;}
+  }
+
+  @keyframes line-intro {
+    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:40%; top:41%;}
+  }
+
+  @keyframes mycareer-intro {
+    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:70%; top:90%;}
+    100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:40%; top:42%;}
+  }
+}
+
+
 
 
