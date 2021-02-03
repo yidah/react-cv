@@ -12,7 +12,6 @@
   padding: 0 20px;
   box-sizing: border-box; /* include padding and border */
   z-index:90; /*specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.*/
-  color: #9B8338;
 }
 .Toolbar nav{
     height: 100%; 

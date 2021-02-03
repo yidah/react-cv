@@ -1,16 +1,15 @@
 import React from 'react';
+import classes from './SoftSkill.module.css';
 
 const softSkill = (props) => {
   return (
     <>
-      <div>
-        <img src={props.imgSrc} alt={props.imgAlt}/>
+      <div className={classes.Container}>
+        <div className={classes.Hexagon}>
+       
+        </div>
       </div>
-      <div>
-        <h2>{props.title}</h2>
-        <p>{props.desc}</p>
-      </div>
-      </>
+    </>
   );
 };
 

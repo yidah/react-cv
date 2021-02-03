@@ -1,0 +1,38 @@
+
+.Container{
+    height: 140px;
+    width: 160px;
+    position: absolute;
+    background-color:white;
+    margin:auto;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.Hexagon{
+    height: 0;
+    width: 160px;
+    border-bottom: 70px solid #ffc000;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position: absolute;
+    top:0;
+}
+
+.Hexagon:before{
+    content: '';
+    height: 0;
+    width: 80px;
+    border-top: 70px solid #ffc000;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position: absolute;
+    top:70px;
+    left: -40px;
+}
+
+.Bulb{
+    color: white;
+}
