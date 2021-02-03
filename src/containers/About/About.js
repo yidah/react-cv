@@ -10,9 +10,9 @@ class About extends Component{
                 <SoftSkill imgSrc="" imgAlt=""
                                  title="Dynamic"
                                  desc="soy muy dinamico"/>
-                <img src={Me} alt="me"/>
+                {/* <img src={Me} alt="me"/>
 
-                <Skill skill="JavaScript" percentage="100%"/>
+                <Skill skill="JavaScript" percentage="100%"/> */}
             </>
         )
     }

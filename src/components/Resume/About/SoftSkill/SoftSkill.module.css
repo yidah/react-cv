@@ -1,46 +1,217 @@
-
 .Container{
-    height: 140px;
-    width: 160px;
+    height: 280px;
+    width: 100%;
     position: absolute;
     background-color:white;
-    /* margin:auto;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0; */
+    margin:3rem;
 }
 
-.Hexagon{
-    height: 0;
-    width: 160px;
-    border-bottom: 70px solid #ffc000;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    position: absolute;
-    top:0;
-}
-
-.Hexagon:before{
-    content: '';
+.Hexagon1{
     height: 0;
     width: 80px;
-    border-top: 70px solid #ffc000;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
+    border-bottom: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
     position: absolute;
-    top:70px;
-    left: -40px;
+    top:0;
+}
+
+.Hexagon1:before{
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:35px;
+    left: -20px;
+}
+
+.Hexagon2{
+    height: 0;
+    width: 80px;
+    border-bottom: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:0;
+    left:50%;
+}
+
+.Hexagon2:before{
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:35px;
+    left: -20px;
+}
+
+.Hexagon3{
+    height: 0;
+    width: 80px;
+    border-bottom: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:50%;
+    left:0;
+}
+
+.Hexagon3:before{
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:35px;
+    left: -20px;
+}
+
+.Hexagon4{
+    height: 0;
+    width: 80px;
+    border-bottom: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+.Hexagon4:before{
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid #ffc000;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:35px;
+    left: -20px;
 }
 
 #Bulb {
     color: white;
-    font-size: 5rem;
+    font-size: 2.5rem;
     position: absolute;
-    top:1rem;
+    top:0.75rem;
 }
+
+
 
 /* Greater than 640 */
 @media(min-width:40rem){
 
+    .Container{
+        height: 140px;
+        width: 100%;
+        position: absolute;
+        background-color:white;
+        margin:3rem;
+    }
+    
+    .Hexagon1{
+        height: 0;
+        width: 160px;
+        border-bottom: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:0;
+    }
+    
+    .Hexagon1:before{
+        content: '';
+        height: 0;
+        width: 80px;
+        border-top: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:70px;
+        left: -40px;
+    }
+    
+    .Hexagon2{
+        height: 0;
+        width: 160px;
+        border-bottom: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:0;
+        left:25%
+    }
+    
+    .Hexagon2:before{
+        content: '';
+        height: 0;
+        width: 80px;
+        border-top: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:70px;
+        left: -40px;
+    }
+    
+    .Hexagon3{
+        height: 0;
+        width: 160px;
+        border-bottom: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:0;
+        left:50%
+    }
+    
+    .Hexagon3:before{
+        content: '';
+        height: 0;
+        width: 80px;
+        border-top: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:70px;
+        left: -40px;
+    }
+    
+    .Hexagon4{
+        height: 0;
+        width: 160px;
+        border-bottom: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:0;
+        left:75%
+    }
+    
+    .Hexagon4:before{
+        content: '';
+        height: 0;
+        width: 80px;
+        border-top: 70px solid #ffc000;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top:70px;
+        left: -40px;
+    }
+    
+    #Bulb {
+        color: white;
+        font-size: 5rem;
+        position: absolute;
+        top:1.5rem;
+    }
 }
