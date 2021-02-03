@@ -50,7 +50,7 @@ greater 840px  */
     100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:10%; top:42%;}
   } 
 
-  /* Greater than 640 */
+/* Greater than 640 */
 @media(min-width:40rem){
   .Home {
     font-size: 1.7rem;   

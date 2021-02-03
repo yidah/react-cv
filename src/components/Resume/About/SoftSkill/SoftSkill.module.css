@@ -4,11 +4,11 @@
     width: 160px;
     position: absolute;
     background-color:white;
-    margin:auto;
+    /* margin:auto;
     top:0;
     bottom: 0;
     left:0;
-    right:0;
+    right:0; */
 }
 
 .Hexagon{
@@ -33,6 +33,14 @@
     left: -40px;
 }
 
-.Bulb{
+#Bulb {
     color: white;
+    font-size: 5rem;
+    position: absolute;
+    top:1rem;
+}
+
+/* Greater than 640 */
+@media(min-width:40rem){
+
 }

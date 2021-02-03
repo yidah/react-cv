@@ -6,7 +6,7 @@ const softSkill = (props) => {
     <>
       <div className={classes.Container}>
         <div className={classes.Hexagon}>
-       
+        <span class="material-icons" id={classes.Bulb}>lightbulb</span>
         </div>
       </div>
     </>
