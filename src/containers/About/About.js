@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import SoftSkill from '../../components/Resume/About/SoftSkill/SoftSkill';
+import SoftSkills from '../../components/About/SoftSkills/SoftSkills';
 // import Skill from '../../components/Resume/About/Skill/Skill';
 // import Me from '../../assets/images/me.png';
 
@@ -7,7 +7,7 @@ class About extends Component{
     render(){
         return(
             <>
-                <SoftSkill imgSrc="" imgAlt=""
+                <SoftSkills imgSrc="" imgAlt=""
                                  title="Dynamic"
                                  desc="soy muy dinamico"/>
                 {/* <img src={Me} alt="me"/>

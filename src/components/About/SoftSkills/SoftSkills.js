@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SoftSkill.module.css';
+import classes from './SoftSkills.module.css';
 
 const softSkill = (props) => {
   return (

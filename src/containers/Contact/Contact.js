@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Media from '../../components/Resume/Contact/Media/Media';
+import Media from '../../components/Contact/Media/Media';
 
 class Contact extends Component{
     render(){
