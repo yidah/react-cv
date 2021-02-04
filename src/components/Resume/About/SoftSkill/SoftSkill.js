@@ -11,19 +11,19 @@ const softSkill = (props) => {
           </span>
         </div>
          <div className={classes.Hexagon2}>
-          <span class="material-icons" id={classes.Bulb}>
+          <span class="material-icons" id={classes.Row}>
             rowing
           </span>
         </div>
       
         <div className={classes.Hexagon3}>
-          <span class="material-icons" id={classes.Bulb}>
+          <span class="material-icons" id={classes.Face}>
             face
           </span>
         </div>
           
         <div className={classes.Hexagon4}>
-          <span class="material-icons" id={classes.Bulb}>
+          <span class="material-icons" id={classes.Flight}>
             flight_takeoff
           </span>
         </div> 

@@ -1,22 +1,32 @@
 .Container{
     height: 280px;
     width: 100%;
-    position: absolute;
+    position: relative;
     background-color:white;
-    margin:3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    
 }
 
-.Hexagon1{
+.Hexagon1,
+.Hexagon2,
+.Hexagon3,
+.Hexagon4 {
     height: 0;
     width: 80px;
     border-bottom: 35px solid #ffc000;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    position: absolute;
-    top:0;
+    position: relative;
 }
 
-.Hexagon1:before{
+.Hexagon1:before,
+.Hexagon2:before,
+.Hexagon3:before,
+.Hexagon4:before {
     content: '';
     height: 0;
     width: 40px;
@@ -28,187 +38,50 @@
     left: -20px;
 }
 
-.Hexagon2{
-    height: 0;
-    width: 80px;
-    border-bottom: 35px solid #ffc000;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:0;
-    left:50%;
-}
-
-.Hexagon2:before{
-    content: '';
-    height: 0;
-    width: 40px;
-    border-top: 35px solid #ffc000;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:35px;
-    left: -20px;
-}
-
-.Hexagon3{
-    height: 0;
-    width: 80px;
-    border-bottom: 35px solid #ffc000;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:50%;
-    left:0;
-}
-
-.Hexagon3:before{
-    content: '';
-    height: 0;
-    width: 40px;
-    border-top: 35px solid #ffc000;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:35px;
-    left: -20px;
-}
-
-.Hexagon4{
-    height: 0;
-    width: 80px;
-    border-bottom: 35px solid #ffc000;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:50%;
-    left:50%;
-}
-
-.Hexagon4:before{
-    content: '';
-    height: 0;
-    width: 40px;
-    border-top: 35px solid #ffc000;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:35px;
-    left: -20px;
-}
-
-#Bulb {
+#Bulb,
+#Row,
+#Face,
+#Flight {
     color: white;
     font-size: 2.5rem;
     position: absolute;
     top:0.75rem;
 }
 
-
-
 /* Greater than 640 */
 @media(min-width:40rem){
 
     .Container{
         height: 140px;
-        width: 100%;
-        position: absolute;
-        background-color:white;
-        margin:3rem;
+        flex-direction: row;
     }
     
-    .Hexagon1{
-        height: 0;
+    .Hexagon1,
+    .Hexagon2,
+    .Hexagon3,
+    .Hexagon4 {
         width: 160px;
         border-bottom: 70px solid #ffc000;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
-        position: absolute;
-        top:0;
     }
     
-    .Hexagon1:before{
-        content: '';
-        height: 0;
+    .Hexagon1:before,
+    .Hexagon2:before,
+    .Hexagon3:before,
+    .Hexagon4:before {
         width: 80px;
         border-top: 70px solid #ffc000;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
-        position: absolute;
         top:70px;
         left: -40px;
     }
     
-    .Hexagon2{
-        height: 0;
-        width: 160px;
-        border-bottom: 70px solid #ffc000;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        position: absolute;
-        top:0;
-        left:25%
-    }
-    
-    .Hexagon2:before{
-        content: '';
-        height: 0;
-        width: 80px;
-        border-top: 70px solid #ffc000;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        position: absolute;
-        top:70px;
-        left: -40px;
-    }
-    
-    .Hexagon3{
-        height: 0;
-        width: 160px;
-        border-bottom: 70px solid #ffc000;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        position: absolute;
-        top:0;
-        left:50%
-    }
-    
-    .Hexagon3:before{
-        content: '';
-        height: 0;
-        width: 80px;
-        border-top: 70px solid #ffc000;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        position: absolute;
-        top:70px;
-        left: -40px;
-    }
-    
-    .Hexagon4{
-        height: 0;
-        width: 160px;
-        border-bottom: 70px solid #ffc000;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        position: absolute;
-        top:0;
-        left:75%
-    }
-    
-    .Hexagon4:before{
-        content: '';
-        height: 0;
-        width: 80px;
-        border-top: 70px solid #ffc000;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        position: absolute;
-        top:70px;
-        left: -40px;
-    }
-    
-    #Bulb {
+    #Bulb,
+    #Row,
+    #Face,
+    #Flight {
         color: white;
         font-size: 5rem;
         position: absolute;
