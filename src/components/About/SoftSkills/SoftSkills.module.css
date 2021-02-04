@@ -87,4 +87,32 @@
         position: absolute;
         top:1.5rem;
     }
+
+
+
+    .SoftSkill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+    }
+
+    .SoftSkillDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 90px;
+
+    }
+
+    .SoftSkillDescription h1, p {
+        text-align: center;
+        margin:0;
+    }
+
+    .SoftSkillDescription h1{
+        font-size: 1.3rem;
+    }
+
+
 }
