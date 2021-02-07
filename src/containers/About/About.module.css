@@ -1,0 +1,21 @@
+.About {
+  display: flex;
+  flex-direction: column;
+}
+
+.PhotoSkillsContainer { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+}
+
+/* Greater than 640 */
+@media(min-width: 640px){  
+  
+  .PhotoSkillsContainer {
+    margin-top: 12rem;
+    flex-direction: row;
+  }
+}
+

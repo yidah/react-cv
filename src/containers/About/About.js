@@ -1,21 +1,24 @@
-import React,{ Component } from "react";
+import React, { Component } from 'react';
 import SoftSkills from '../../components/About/SoftSkills/SoftSkills';
-// import Skill from '../../components/Resume/About/Skill/Skill';
-// import Me from '../../assets/images/me.png';
+import classes from './About.module.css';
+import Skills from '../../components/About/Skills/Skills';
+import Photo from '../../components/About/Me/Me';
 
-class About extends Component{
-    render(){
-        return(
-            <>
-                <SoftSkills imgSrc="" imgAlt=""
-                                 title="Dynamic"
-                                 desc="soy muy dinamico"/>
-                {/* <img src={Me} alt="me"/>
+class About extends Component {
+  render() {
+    return (
+      <>
+        <div className={classes.About}>
+          <SoftSkills />
 
-                <Skill skill="JavaScript" percentage="100%"/> */}
-            </>
-        )
-    }
+          <div className={classes.PhotoSkillsContainer}>
+            <Photo />
+            <Skills />
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 export default About;
