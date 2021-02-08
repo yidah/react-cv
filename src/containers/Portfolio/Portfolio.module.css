@@ -1,0 +1,26 @@
+.Gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+div.Gallery > div:nth-child(even) div:nth-child(1) {
+    background-color: #84670F;
+    color:white;
+}
+
+div.Gallery > div:nth-child(odd) div:nth-child(1) {
+    background-color:#ffc000;
+}
+
+/* Greater than 1023px-64rem 640-40rem  */
+@media(min-width:40rem){
+    .Gallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 100px;
+    }
+  }
