@@ -1,16 +1,26 @@
 .CardContainer {
     width: 100%;
-    /* width: 200px; */
     height: 200px;
     perspective: 1000px; 
 
 }
+
 .Card {
     position: relative;
     width:100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 1s;
+   
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  
 }
 
 .CardContainer:hover .Card {
@@ -26,18 +36,71 @@
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  
 }
 
 .Front {
     background-color:#ffc728;
-    color:#333;
+    color:#84670F;
+    font-size: 1.5rem;
 
 }
 
 .Back {
     background-color:#fafafa;
-    color:#333;
-    transform: rotateY(180deg);  
+    color:#84670F;
+    transform: rotateY(180deg); 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.Description {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #c0c0c0;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 18pt;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.Tech {
+    width: 33%;
+    padding-top:1rem;
+}
+
+
+.Button {
+    margin-bottom: 10px;
+    border:2px solid #84670F;
+    padding:5px;
+    text-decoration: none;
+}
+
+a.Button:hover {
+    background-color:#ffc728;
+}
+
+a.Button:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a.Button:visited {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 @media(min-width:40rem){
@@ -46,4 +109,18 @@
         height: 300px;
     
     }
+    .Front {
+        font-size: 2rem;
+    }
+    
+    
+    .Tech {
+        padding-top:3rem;
+    }
+    
+    
+    .Button {
+        margin-bottom: 20px;
+    }
+    
   }

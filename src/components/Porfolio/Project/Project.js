@@ -6,11 +6,11 @@ const project = (props) => {
     <>
       <div className={classes.CardContainer}>
         <div className={classes.Card}>
-          <div className={classes.Front}>Burger Builder</div>
+          <div className={classes.Front}>{props.front}</div>
           <div className={classes.Back}>
-            <span className={classes.Description}>ChowNow Ordering</span>
-            <span className={classes.Tech}>React JS / Python</span>
-            <span className={classes.Button}>React JS / Python</span>
+          <span className={classes.Tech}>{props.backTech}</span>
+            <span className={classes.Description}>{props.backDesc}</span>
+            <a href="/" className={classes.Button}>VIEW CODE</a>
           </div>
         </div>
       </div>
