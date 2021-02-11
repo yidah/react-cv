@@ -8,7 +8,7 @@ const softSkill = (props) => {
       
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon1}>
-            <span id={classes.Bulb}>
+            <span id={classes.Bulb} class="material-icons">
               lightbulb
             </span>
           </div>
@@ -21,7 +21,7 @@ const softSkill = (props) => {
 
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon2}>
-            <span id={classes.Row}>
+            <span id={classes.Row} class="material-icons">
             rowing
             </span>
           </div>
@@ -35,7 +35,7 @@ const softSkill = (props) => {
  
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon3}>
-            <span id={classes.Face}>
+            <span id={classes.Face} class="material-icons">
             face
             </span>
           </div>
@@ -48,7 +48,7 @@ const softSkill = (props) => {
 
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon4}>
-            <span id={classes.Flight}>
+            <span id={classes.Flight} class="material-icons">
             flight_takeoff
             </span>
           </div>
