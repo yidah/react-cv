@@ -85,7 +85,7 @@
     .Hexagon3,
     .Hexagon4 {
         width: 160px;
-        border-bottom: 70px solid #ffc000;
+        border-bottom: 70px solid #1284B3;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
     }
@@ -95,14 +95,14 @@
     .Hexagon3:before,
     .Hexagon4:before {
         width: 80px;
-        border-top: 70px solid #ffc000;
+        border-top: 70px solid #1284B3;
         border-left: 40px solid transparent;
         border-right: 40px solid transparent;
         top:70px;
         left: -40px;
     }
     
-    #Bulb,
+    /* #Bulb,
     #Row,
     #Face,
     #Flight {
@@ -110,7 +110,22 @@
         font-size: 5rem;
         position: absolute;
         top:1.5rem;
+    } */
+
+    .Icons {
+        color: white;
+        font-size: 5rem;
+        position: absolute;
+        top:1.5rem;
+
     }
+
+    /* svg.Icons {
+        color: white;
+        font-size: 5rem;
+        position: absolute;
+        top:1.5rem;
+    } */
 
     .SoftSkillDescription {
         padding-top: 90px;

@@ -1,5 +1,9 @@
 import React from 'react';
 import classes from './SoftSkills.module.css';
+import FaceIcon from '@material-ui/icons/Face';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
+import RowingIcon from '@material-ui/icons/Rowing';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 
 const softSkill = (props) => {
   return (
@@ -8,9 +12,7 @@ const softSkill = (props) => {
       
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon1}>
-            <span id={classes.Bulb} class="material-icons">
-              lightbulb
-            </span>
+            <EmojiObjectsIcon className={classes.Icons}/>
           </div>
 
           <div className={classes.SoftSkillDescription}>
@@ -21,9 +23,7 @@ const softSkill = (props) => {
 
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon2}>
-            <span id={classes.Row} class="material-icons">
-            rowing
-            </span>
+            <RowingIcon className={classes.Icons}/>
           </div>
 
           <div className={classes.SoftSkillDescription}>
@@ -35,9 +35,7 @@ const softSkill = (props) => {
  
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon3}>
-            <span id={classes.Face} class="material-icons">
-            face
-            </span>
+            <FaceIcon className={classes.Icons}/>
           </div>
 
           <div className={classes.SoftSkillDescription}>
@@ -48,9 +46,7 @@ const softSkill = (props) => {
 
         <div className={classes.SoftSkill}>
           <div className={classes.Hexagon4}>
-            <span id={classes.Flight} class="material-icons">
-            flight_takeoff
-            </span>
+            <FlightTakeoffIcon className={classes.Icons}/>
           </div>
 
           <div className={classes.SoftSkillDescription}>

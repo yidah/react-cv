@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import classes from './Contact.module.css';
-// import Media from '../../components/Contact/Media/Media';
+import Media from '../../components/Contact/Media/Media';
 
 class Contact extends Component {
   render() {
     return (
       <>
+      <div className={classes.ContactContainer}>
+      <Media/>
+      
       <div className={classes.EnvelopeContainer}>
       <div className={classes.Envelope} >
           <div className={classes.Back}></div>
@@ -25,6 +28,7 @@ class Contact extends Component {
             <input className={classes.Button} type="submit" value="Send" />
           </form>
         </div>
+      </div>
       </div>
 
       </>

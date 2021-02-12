@@ -1,5 +1,11 @@
 
-.EnvelopeContainer{
+.ContactContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.EnvelopeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +18,7 @@
     position:relative;
     cursor:pointer;
     z-index:1;
+
   }
 
 .Envelope:before{

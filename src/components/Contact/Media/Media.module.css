@@ -1,0 +1,17 @@
+.MediaContainer {
+    height: 20%;
+    width: 20%;
+    /* background-color: #1283B3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #1283B3; */
+}
+
+svg.Icons {
+    /* color: #84670F; */
+    color: #1283B3;
+ font-size: 6rem;
+ /* height: 7rem; */
+}
