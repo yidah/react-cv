@@ -38,15 +38,7 @@
     left: -20px;
 }
 
-#Bulb,
-#Row,
-#Face,
-#Flight {
-    color: white;
-    font-size: 2.5rem;
-    position: absolute;
-    top:0.75rem;
-}
+
 svg.Icons {
     color: white;
     position: absolute;
