@@ -23,12 +23,13 @@
 }
 
 .Progress {
-  width: 50%;
+  /* width: 50%; */
   background-image: -webkit-linear-gradient(left, #0DB9FF, #1284B3);
+
 }
 
 .Skill {
-  width: 35%;
+  width: 80px;
   height: 100%;
   padding-left: 5px;
   padding-top: 5px;
@@ -39,6 +40,73 @@
   padding-top: 5px;
   padding-left: 5px;
 }
+
+#css {
+  animation: css-progress 6s forwards;
+}
+
+#html {
+  animation: html-progress 6s forwards;
+}
+
+#react {
+  animation: react-progress 6s forwards;
+}
+
+#javascript {
+  animation: javascript-progress 6s forwards;
+}
+
+#nodejs {
+  animation: nodejs-progress 6s forwards;
+}
+
+@keyframes css-progress {
+  from {
+    width:0%;
+  }
+  To{
+    width:60%;
+  }
+}
+
+@keyframes html-progress {
+  from {
+    width:0%;
+  }
+  To{
+    width:90%;
+  }
+}
+
+@keyframes react-progress {
+  from {
+    width:0%;
+  }
+  To{
+    width:80%;
+  }
+}
+
+@keyframes javascript-progress {
+  from {
+    width:0%;
+  }
+  To{
+    width:90%;
+  }
+}
+@keyframes nodejs-progress {
+  from {
+    width:0%;
+  }
+  To{
+    width:50%;
+  }
+}
+
+
+
 
 /* Greater than 640 */
 @media (min-width: 40rem) {

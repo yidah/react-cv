@@ -5,6 +5,7 @@ import Skills from '../../components/About/Skills/Skills';
 import Photo from '../../components/About/Me/Me';
 
 class About extends Component {
+
   render() {
     return (
       <>
@@ -13,7 +14,7 @@ class About extends Component {
 
           <div className={classes.PhotoSkillsContainer}>
             <Photo />
-            <Skills />
+            <Skills/>
           </div>
         </div>
       </>
