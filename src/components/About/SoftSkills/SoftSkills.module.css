@@ -17,7 +17,7 @@
 .Hexagon4 {
     height: 0;
     width: 80px;
-    border-bottom: 35px solid #ffc000;
+    border-bottom: 35px solid #1284B3;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: relative;
@@ -30,7 +30,7 @@
     content: '';
     height: 0;
     width: 40px;
-    border-top: 35px solid #ffc000;
+    border-top: 35px solid #1284B3;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -46,6 +46,13 @@
     font-size: 2.5rem;
     position: absolute;
     top:0.75rem;
+}
+svg.Icons {
+    color: white;
+    position: absolute;
+    font-size: 2.5rem;
+    top:1rem;
+
 }
 
 .SoftSkill {
@@ -101,31 +108,11 @@
         top:70px;
         left: -40px;
     }
-    
-    /* #Bulb,
-    #Row,
-    #Face,
-    #Flight {
-        color: white;
-        font-size: 5rem;
-        position: absolute;
-        top:1.5rem;
-    } */
 
-    .Icons {
-        color: white;
+    svg.Icons {
         font-size: 5rem;
-        position: absolute;
         top:1.5rem;
-
     }
-
-    /* svg.Icons {
-        color: white;
-        font-size: 5rem;
-        position: absolute;
-        top:1.5rem;
-    } */
 
     .SoftSkillDescription {
         padding-top: 90px;

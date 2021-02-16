@@ -1,89 +1,235 @@
-.Home {
-    /* background-color: #ffc000; */
-    height: 100%;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 700;
-    
+.CircleBig {
+  /* display: block; */
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  background: #7b5ab3;
+  height: 150px;
+  width: 150px;
+  top: 10%;
+  left: 20%;
+  animation: slide-in-blurred-top 3s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.CircleBig::before {
+  content: '';
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  background: #1284b3;
+  height: 150px;
+  width: 150px;
+  top: -430%;
+  left: 95%;
+  animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.Me {
-    position: relative;
-    top:10%;
-    left:2%;
-    width: 300px;
-    animation:me-intro 3s normal forwards; 
+.CircleMedium {
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  background: #ffc000;
+  height: 100px;
+  width: 100px;
+  top: 10%;
+  left: 65%;
+  animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.Line {
-    position: relative;
-    top:41%;
-    left:10%;
-    width: 300px;
-    height: 4px;
-    animation: line-intro 1s 3s normal forwards; 
+.CircleMedium::before {
+  content: '';
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  background: #7b5ab3;
+  height: 100px;
+  width: 100px;
+  top: -800%;
+  left: 55%;
+  animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.MyCareer {
-    position: relative;
-    top:90%;
-    left:10%;
-    width: 300px;
-    animation: mycareer-intro 3s normal forwards; 
-} 
+.CircleSmall {
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  background: #ffc000;
+  height: 50px;
+  width: 50px;
+  top: -10%;
+  left: 15%;
+  animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
 
-/* menor 600px mobile
-menor 840px tablet
-greater 840px  */
+.CircleSmall::before {
+  content: '';
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  background: #1284b3;
+  height: 50px;
+  width: 50px;
+  top: -1220%;
+  left: 190%;
+  animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
 
-@keyframes me-intro {
-    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:2%; top:10%;}
-    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:10%; top:40%;}
+.IntroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+  animation: intro-falls 2s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.IntroOne,
+.IntroTwo,
+.IntroThree {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.IntroOne {
+  color: #1284b3;
+}
+.IntroTwo {
+  color: #ffc000;
+}
+.IntroThree {
+  color: #7b5ab3;
+}
+
+@keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px);
+    transform-origin: 50% 0%;
+    opacity: 0;
   }
-
-  @keyframes line-intro {
-    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:10%; top:41%;}
+  100% {
+    transform: translateY(45vh);
+    transform-origin: 50% 50%;
+    opacity: 1;
   }
+}
 
-  @keyframes mycareer-intro {
-    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:10%; top:90%;}
-    100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:10%; top:42%;}
-  } 
+@keyframes intro-falls {
+  100% {
+    transform: translateY(70vh);
+    transform-origin: 50% 50%;
+    opacity: 1;
+  }
+}
 
 /* Greater than 640 */
-@media(min-width:40rem){
-  .Home {
-    font-size: 1.7rem;   
+@media (min-width: 800px) {
+  
+   .CircleBig {
+    height: 300px;
+    width: 300px;
+    top: 10%;
+    left: 42%;
+    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
-  .Line {
-    position: relative;
-    top:41%;
-    left:80%;
-    width: 360px;
-    height: 4px;
-    animation: line-intro 1s 3s normal forwards; 
+  .CircleBig::before {
+    background: #ffc000;
+    height: 300px;
+    width: 300px;
+    top: 18%;
+    left: -160%;
   }
-  .MyCareer {
-    left: 70%;
-    top:90%;
-    width: 400px;
-  } 
+  .CircleBig::after {
+    content: '';
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    background: #1284b3;
+    height: 300px;
+    width: 300px;
+    top: 88%;
+    left: 155%;
+  }
 
-  @keyframes me-intro {
-    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:2%; top:10%;}
-    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:40%; top:40%;}
+  .CircleMedium {
+    height: 200px;
+    width: 200px;
+    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
 
-  @keyframes line-intro {
-    100% {background-image:linear-gradient(to left, #ccc , #ffc000); left:40%; top:41%;}
+  .CircleMedium::before {
+    background: #1284b3;
+    height: 200px;
+    width: 200px;
+    top: -130%;
+    left: -350%;
   }
 
-  @keyframes mycareer-intro {
-    50%  {background-image:linear-gradient(to top, #ccc , #ffc000);  left:70%; top:90%;}
-    100% {background-image:linear-gradient(to right, #ccc , #ffc000); left:40%; top:42%;}
+  .CircleMedium::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    background: #7b5ab3;
+    height: 200px;
+    width: 200px;
+    top: -25%;
+    left: 200%;
+  }
+
+  .CircleSmall {
+    height: 100px;
+    width: 100px;
+    left: 35%;
+    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+  .CircleSmall::before {
+    background: #7b5ab3;
+    height: 100px;
+    width: 100px;
+    top: 100%;
+    left: -430%;
+  }
+
+  .CircleSmall::after {
+    content: '';
+    display: block;
+    background: #1284b3;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    position: absolute;
+    top: -10%;
+    left: 700%;
+  }
+
+  .IntroContainer {
+    animation: intro-falls 4s 1.3s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+  .IntroOne,
+  .IntroTwo,
+  .IntroThree {
+    font-size: 3rem;
+  }
+
+  .IntroOne {
+    color: #1284b3;
+  }
+  .IntroTwo {
+    color: #ffc000;
+  }
+  .IntroThree {
+    color: #7b5ab3;
+  }
+
+  @keyframes slide-in-blurred-top {
+    0% {
+      transform: translateY(-1000px);
+      transform-origin: 50% 0%;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(25vh);
+      transform-origin: 50% 50%;
+      opacity: 1;
+    }
   }
 }
-
-
-
-
