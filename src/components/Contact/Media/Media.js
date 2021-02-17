@@ -12,11 +12,11 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 const media = (props) => {
   return (
     <div className={classes.MediaContainer}>
- <a href="/" ><LinkedInIcon className={classes.Icons} /></a>
- <a href="/" ><InstagramIcon className={classes.Icons} /></a>
- <a href="/" ><FacebookIcon className={classes.Icons} /></a>
- <a href="/" ><TwitterIcon className={classes.Icons} /></a>
- <a href="/" ><GitHubIcon className={classes.Icons} /></a>
+ <a href="https://www.linkedin.com/in/yidahaguirre/" ><LinkedInIcon className={classes.Icons} /></a>
+ <a href="https://www.instagram.com/yidahaguirre/" ><InstagramIcon className={classes.Icons} /></a>
+ <a href="https://www.facebook.com/yidah.aguirre" ><FacebookIcon className={classes.Icons} /></a>
+ <a href="https://twitter.com/Yidah8" ><TwitterIcon className={classes.Icons} /></a>
+ <a href="https://github.com/yidah" ><GitHubIcon className={classes.Icons} /></a>
     </div>
   );
 };

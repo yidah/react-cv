@@ -16,6 +16,7 @@
   .PhotoSkillsContainer {
     margin-top: 12rem;
     flex-direction: row;
+    padding: 0 150px;
   }
 }
 
