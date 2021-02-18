@@ -42,20 +42,21 @@
 .Back {
   position: absolute;
   top: 0;
-  z-index: -1;
+  /* z-index: -1; */
   border-top: 150px solid #ffc000;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
   transform-origin: top;
   transform: rotateX(0deg);
-  animation: close-envelope 1.5s normal forwards;
+  animation: open-envelope 1.5s normal forwards;
+ 
 }
 
 .Letter {
   position: relative;
   padding: 20px 10px;
   width: 300px;
-  z-index: 2;
+  /* z-index: 2; */
   margin: 0 auto;
   background-color: #f1ebe3;
   border: 1px solid #fff;
@@ -131,12 +132,53 @@ textarea:focus {
   background-color: #84670f;
 }
 
+
+.CloseEnvelope{
+ animation: close-envelope 2s 2s normal forwards;
+}
+
 @keyframes close-envelope {
+  from {
+    transform: rotateX(185deg);
+    transform-origin: center top;   
+  }
+  to {
+    transform: rotateX(360deg);
+    transform-origin: center top;
+    z-index: 3;
+    border-top: 100px solid #dfa805;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+  }
+}
+
+.LetterDown{
+   animation: letter-down 2s normal forwards;
+}
+
+@keyframes letter-down {
+  0% {
+    opacity: 1;
+    top: -300px;
+    height: 400px;
+   
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+    height: 150px;
+  }
+}
+
+@keyframes open-envelope {
   0% {
     transform: rotateX(0deg);
+    transform-origin: center top;
   }
   100% {
     transform: rotateX(180deg);
+    transform-origin: center top;
+    z-index: -1;
   }
 }
 
@@ -153,8 +195,10 @@ textarea:focus {
     opacity: 1;
     top: -300px;
     height: 400px;
+    z-index: 2;
   }
 }
+
 
 /* Greater than 640 */
 @media (min-width: 800px) {
@@ -193,18 +237,65 @@ textarea:focus {
     height: 80px;
   }
 
+  @keyframes close-envelope {
+    0% {
+      transform: rotateX(180deg);
+      transform-origin: center top;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: center top;
+      z-index: 3;
+      border-top: 200px solid #dfa805;
+      border-left: 400px solid transparent;
+      border-right: 400px solid transparent;
+    }
+  }
+
+  @keyframes letter-down {
+    0% {
+      opacity: 1;
+      top: -300px;
+      height: 400px;
+     
+    }
+    100% {
+      opacity: 1;
+      top: 10px;
+      height: 350px;
+    }
+  }
+
+
+@keyframes open-envelope {
+  0% {
+    transform: rotateX(0deg);
+    transform-origin: center top;
+  }
+  100% {
+    transform: rotateX(180deg);
+    transform-origin: center top;
+    z-index: -1;
+  }
+}
   @keyframes letter-up {
     0% {
       opacity: 0;
+
     }
     75% {
       opacity: 1;
+      height: 200px;
       top: 10px;
     }
     100% {
       opacity: 1;
       top: -300px;
       height: 500px;
+      z-index: 2;
     }
   }
+  
+
+  
 }

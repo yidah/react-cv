@@ -7,18 +7,26 @@ class Contact extends Component {
     name: '',
     email: '',
     message: '',
+    msgSent:false
   };
-
+ 
   changeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
   sendHandler = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    // console.log(this.state);
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+      msgSent:true
+    });
   };
 
   render() {
+
     return (
       <>
         <div className={classes.ContactContainer}>
@@ -26,8 +34,8 @@ class Contact extends Component {
 
           <div className={classes.EnvelopeContainer}>
             <div className={classes.Envelope}>
-              <div className={classes.Back}></div>
-              <form className={classes.Letter}>
+              <div id="envelope" className={`${classes.Back} ${this.state.msgSent ? classes.CloseEnvelope: ''}`}></div>
+              <form id="letter" className={`${classes.Letter} ${this.state.msgSent ? classes.LetterDown: ''}`}>
                 <p>
                   <label>Name:</label>
                   <input
@@ -59,7 +67,9 @@ class Contact extends Component {
                   type="submit"
                   value="send"
                   onClick={this.sendHandler}
-                >SEND</button>
+                >
+                  SEND
+                </button>
               </form>
             </div>
           </div>
