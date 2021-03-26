@@ -12,6 +12,7 @@ div.Gallery > div:nth-child(even) div:nth-child(1) {
     color:white;
 }
 
+
 div.Gallery > div:nth-child(odd) div:nth-child(1) {
     background-color:#ffc000;
 }

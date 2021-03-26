@@ -7,26 +7,43 @@ class Contact extends Component {
     name: '',
     email: '',
     message: '',
-    msgSent:false
+    msgSent: false,
   };
- 
+
   changeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
   sendHandler = (e) => {
     e.preventDefault();
-    // console.log(this.state);
+
     this.setState({
       name: '',
       email: '',
       message: '',
       msgSent:true
     });
+
+    // let title = document.getElementById('name').value;
+    // let email = document.getElementById('email').value;
+    // let text = document.getElementById('message').value;
+
+    // let message = {
+    //   title: title,
+    //   email: email,
+    //   text: text,
+    // };
+    // let jsonData= JSON.stringify(message);
+    // const apiUrl = 'https://portfolio-backend-email-server.herokuapp.com/email';
+
+    // fetch(apiUrl, { method: 'POST', body: jsonData })
+    //   .then((response) => {
+    //     return response.json();
+    //   })
+    //   .then((status) => console.log('This is your data', status));
   };
 
   render() {
-
     return (
       <>
         <div className={classes.ContactContainer}>
@@ -34,11 +51,22 @@ class Contact extends Component {
 
           <div className={classes.EnvelopeContainer}>
             <div className={classes.Envelope}>
-              <div id="envelope" className={`${classes.Back} ${this.state.msgSent ? classes.CloseEnvelope: ''}`}></div>
-              <form id="letter" className={`${classes.Letter} ${this.state.msgSent ? classes.LetterDown: ''}`}>
+              <div
+                id="envelope"
+                className={`${classes.Back} ${
+                  this.state.msgSent ? classes.CloseEnvelope : ''
+                }`}
+              ></div>
+              <form
+                id="letter"
+                className={`${classes.Letter} ${
+                  this.state.msgSent ? classes.LetterDown : ''
+                }`}
+              >
                 <p>
                   <label>Name:</label>
                   <input
+                    id="name"
                     type="text"
                     name="name"
                     onChange={this.changeHandler}
@@ -48,6 +76,7 @@ class Contact extends Component {
                 <p>
                   <label>Enter Email:</label>
                   <input
+                    id="email"
                     type="email"
                     name="email"
                     onChange={this.changeHandler}
@@ -57,6 +86,7 @@ class Contact extends Component {
                 <p>
                   <label>Your Message:</label>
                   <textarea
+                    id="message"
                     name="message"
                     onChange={this.changeHandler}
                     value={this.state.message}
