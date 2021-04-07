@@ -1,28 +1,9 @@
-.CircleBig {
-  /* display: block; */
-  border-radius: 50%;
-  margin: 0;
-  position: absolute;
-  background: #7b5ab3;
-  height: 150px;
-  width: 150px;
-  top: 10%;
-  left: 20%;
-  animation: slide-in-blurred-top 3s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+/* Mobile first  320px — 480px: Mobile devices*/
+.Home{
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
-.CircleBig::before {
-  content: '';
-  border-radius: 50%;
-  margin: 0;
-  position: absolute;
-  background: #1284b3;
-  height: 150px;
-  width: 150px;
-  top: -430%;
-  left: 95%;
-  animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
-}
-
 .CircleMedium {
   border-radius: 50%;
   margin: 0;
@@ -30,12 +11,13 @@
   background: #ffc000;
   height: 100px;
   width: 100px;
-  top: 10%;
-  left: 65%;
+  top: 5%;
+  left: 15%;
+
   animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.CircleMedium::before {
+.CircleMedium2 {
   content: '';
   border-radius: 50%;
   margin: 0;
@@ -43,8 +25,8 @@
   background: #7b5ab3;
   height: 100px;
   width: 100px;
-  top: -800%;
-  left: 55%;
+  top: 25%;
+  left:50%;
   animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
@@ -55,12 +37,12 @@
   background: #ffc000;
   height: 50px;
   width: 50px;
-  top: -10%;
-  left: 15%;
+  top: 9%;
+  left: 55%;
   animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.CircleSmall::before {
+.CircleSmall2 {
   content: '';
   border-radius: 50%;
   margin: 0;
@@ -68,8 +50,8 @@
   background: #1284b3;
   height: 50px;
   width: 50px;
-  top: -1220%;
-  left: 190%;
+  top: 30%;
+  left: 20%;
   animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
@@ -78,12 +60,12 @@
   flex-direction: column;
   align-items: center;
   height: 25vh;
-  animation: intro-falls 2s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: intro-falls 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 .IntroOne,
 .IntroTwo,
 .IntroThree {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
@@ -99,137 +81,183 @@
 
 @keyframes slide-in-blurred-top {
   0% {
-    transform: translateY(-1000px);
-    transform-origin: 50% 0%;
+    transform: translateY(-100vh);
     opacity: 0;
   }
   100% {
-    transform: translateY(45vh);
-    transform-origin: 50% 50%;
+    transform: translateY(5vh);
     opacity: 1;
   }
 }
 
 @keyframes intro-falls {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
   100% {
-    transform: translateY(70vh);
-    transform-origin: 50% 50%;
+    transform: translateY(50vh);
     opacity: 1;
   }
 }
 
-/* Greater than 640 */
-@media (min-width: 800px) {
-  
-   .CircleBig {
-    height: 300px;
-    width: 300px;
-    top: 10%;
-    left: 42%;
-    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) {
+  .CircleBig {
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    background: #7b5ab3;
+    height: 150px;
+    width: 150px;
+    top: 0%;
+    left: 10%;
+    animation: slide-in-blurred-top 3s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
-  .CircleBig::before {
-    background: #ffc000;
-    height: 300px;
-    width: 300px;
-    top: 18%;
-    left: -160%;
-  }
-  .CircleBig::after {
-    content: '';
+  .CircleBig2 {
+    
     border-radius: 50%;
     margin: 0;
     position: absolute;
     background: #1284b3;
-    height: 300px;
-    width: 300px;
-    top: 88%;
-    left: 155%;
+    height: 150px;
+    width: 150px;
+    top: 65%;
+    left: 65%;
+    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+  }
+
+  .CircleMedium {
+    top: 5%;
+    left: 75%;
+  }
+  
+   .CircleMedium2 {
+    top: 25%;
+    left:50%;
+  }
+  
+  .CircleSmall {
+    top: 70%;
+    left: 20%;
+  }
+  
+  .CircleSmall2 {   
+    top: 30%;
+    left: 20%;
+  } 
+  
+  .IntroOne,
+  .IntroTwo,
+  .IntroThree {
+    font-size: 2rem;
+  }
+
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) {
+  .CircleBig {
+    height: 200px;
+    width: 200px;
+    top: 0%;
+    left: 20%;
+  }
+  .CircleBig2 {
+    height: 200px;
+    width: 200px;
+    top: 70%;
+    left: 55%;
+  }
+
+  .CircleMedium {
+    height: 150px;
+    width: 150px;
+    top: 5%;
+    left: 60%;
+  }
+  
+  .CircleMedium2 {
+    height: 150px;
+    width: 150px;
+    top: 70%;
+    left:10%;
+  }
+  
+  .CircleSmall {
+    height: 100px;
+    width: 100px;
+    top: 40%;
+    left: 15%;
+  }
+  
+  .CircleSmall2 {
+    height: 100px;
+    width: 100px;
+    top: 30%;
+    left: 45%;
+  } 
+  
+  .IntroOne,
+  .IntroTwo,
+  .IntroThree {
+    font-size: 2rem;
+  }
+
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) {
+  .Home{
+max-width: 1500px;
+margin: 0 auto;
+  }
+  .CircleBig {
+    height: 250px;
+    width: 250px;
+    top: 10%;
+    left: 45%;
+  }
+  .CircleBig2 {
+    height: 250px;
+    width: 250px;
+    top: 60%;
+    left: 65%;
   }
 
   .CircleMedium {
     height: 200px;
     width: 200px;
-    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    top: 0%;
+    left: 70%;
   }
-
-  .CircleMedium::before {
-    background: #1284b3;
+  
+  .CircleMedium2 {
     height: 200px;
     width: 200px;
-    top: -130%;
-    left: -350%;
+    top: 70%;
+    left:10%;
   }
-
-  .CircleMedium::after {
-    content: '';
-    display: block;
-    border-radius: 50%;
-    margin: 0;
-    position: absolute;
-    background: #7b5ab3;
-    height: 200px;
-    width: 200px;
-    top: -25%;
-    left: 200%;
-  }
-
+  
   .CircleSmall {
-    height: 100px;
-    width: 100px;
-    left: 35%;
-    animation: slide-in-blurred-top 3s 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    height: 150px;
+    width: 150px;
+    top: 35%;
+    left: 20%;
   }
-  .CircleSmall::before {
-    background: #7b5ab3;
-    height: 100px;
-    width: 100px;
-    top: 100%;
-    left: -430%;
-  }
-
-  .CircleSmall::after {
-    content: '';
-    display: block;
-    background: #1284b3;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin: 0;
-    position: absolute;
-    top: -10%;
-    left: 700%;
-  }
-
-  .IntroContainer {
-    animation: intro-falls 4s 1.3s cubic-bezier(0.23, 1, 0.32, 1) both;
-  }
+  
+  .CircleSmall2 {
+    height: 150px;
+    width: 150px;
+    top: 5%;
+    left: 15%;
+  } 
+  
   .IntroOne,
   .IntroTwo,
   .IntroThree {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
-  .IntroOne {
-    color: #1284b3;
-  }
-  .IntroTwo {
-    color: #ffc000;
-  }
-  .IntroThree {
-    color: #7b5ab3;
-  }
-
-  @keyframes slide-in-blurred-top {
-    0% {
-      transform: translateY(-1000px);
-      transform-origin: 50% 0%;
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(25vh);
-      transform-origin: 50% 50%;
-      opacity: 1;
-    }
-  }
 }
+
