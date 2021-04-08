@@ -10,8 +10,7 @@ class Portfolio extends Component {
         <div className={classes.Gallery} >
           <Project front="Burger Order"
                    backTech="React JS, Redux, Axios / Firebase"
-                   backDesc="Burger Builder is a online hamburger ordering app that let users to build their own hamburger with the ingredients of their choice. 
-                            It is built with React JS, Redux, Axios and connects to a Firebase server."
+                   backDesc="Burger Builder is a online hamburger ordering app that let users to build their own hamburger with the ingredients of their choice."
                    link="https://github.com/yidah/burger-builder.git"
                    />
           <Project front="Project Manager"
@@ -35,10 +34,9 @@ class Portfolio extends Component {
                    backDesc="Posts Organizer let the user create posts and retreive them from a server. It is built with JavaScript and Axios"
                    link=""
                    />
-          <Project front="Exploring Locations"
+          <Project front="Explore Places"
                    backTech="React Js, Redux / Google API"
-                   backDesc="Exploring Locations lets a user to plan a vacation trip providing him with information such as hotels, attractions, shops, etc. 
-                             and allowing him to restrict search within certain radius or draw limits in a Google map."
+                   backDesc="This site that provides users with information such as hotels, attractions, shops, etc. For a particular place or zone within certain radius or draw limits in a Google map."
                    link="https://github.com/yidah/react-my-world.git"
                    />
         </div>

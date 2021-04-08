@@ -17,11 +17,26 @@ div.Gallery > div:nth-child(odd) div:nth-child(1) {
     background-color:#ffc000;
 }
 
-/* Greater than 1023px-64rem 640-40rem  */
-@media(min-width:40rem){
+/* 481px—768px: iPads, Tablets */
+@media (min-width: 481px) {
     .Gallery{
         flex-direction: row;
         flex-wrap: wrap;
+    }
+}
+
+/* 769px—1024px: Small screens, laptops */
+@media (min-width: 769px) {
+    .Gallery{
+        padding: 50px;
+    }
+}
+/* 1025px—1200px: Desktops, large screens */
+@media (min-width: 1025px) {
+    .Gallery{
+        max-width: 1500px;
+        margin: 0 auto;
         padding: 100px;
     }
-  }
+}
+
