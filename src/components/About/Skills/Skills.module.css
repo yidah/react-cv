@@ -24,8 +24,7 @@
 
 .Progress {
   /* width: 50%; */
-  background-image: -webkit-linear-gradient(left, #0DB9FF, #1284B3);
-
+  background-image: -webkit-linear-gradient(left, #0db9ff, #1284b3);
 }
 
 .Skill {
@@ -63,60 +62,51 @@
 
 @keyframes css-progress {
   from {
-    width:0%;
+    width: 0%;
   }
-  To{
-    width:60%;
+  to {
+    width: 60%;
   }
 }
 
 @keyframes html-progress {
   from {
-    width:0%;
+    width: 0%;
   }
-  To{
-    width:90%;
+  to {
+    width: 90%;
   }
 }
 
 @keyframes react-progress {
   from {
-    width:0%;
+    width: 0%;
   }
-  To{
-    width:80%;
+  to {
+    width: 80%;
   }
 }
 
 @keyframes javascript-progress {
   from {
-    width:0%;
+    width: 0%;
   }
-  To{
-    width:90%;
+  to {
+    width: 90%;
   }
 }
 @keyframes nodejs-progress {
   from {
-    width:0%;
+    width: 0%;
   }
-  To{
-    width:50%;
+  to {
+    width: 50%;
   }
 }
 
-
-
-
-/* Greater than 640 */
-@media (min-width: 40rem) {
+/* 1025px—1200px: Desktops, large screens */
+@media (min-width: 1025px) {
   .Skills {
-    padding: 0;
-    margin-top: 0;
-    justify-content: none;
-  }
-  .ProgressBar {
-    width: 500px;
-    margin: 0;
+    width: 50%;
   }
 }

@@ -38,8 +38,8 @@
   height: 300px;
 }
 .hexa {
-  width: 325px;
-  height: 230px;
+  width: 290px;
+  height: 195px;
 }
 .hexa div {
   width: 100%;
@@ -55,14 +55,14 @@
   transform: rotate(-60deg);
 }
 
-/* Greater than 640 */
-@media (min-width: 40rem) {
-
-  .MePhotoContainer {
-    padding-left: 0;
+/* 1025px—1200px: Desktops, large screens */
+@media (min-width: 1025px) {
+  .hexa {
+    width: 325px;
+    height: 230px;
   }
 
-  .MeTitle {
-    font-size: 1.3rem;
+  .Me {
+    width: 50%;
   }
 }

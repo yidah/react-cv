@@ -1,123 +1,134 @@
-.Container{
-    height: 230px;
-    width: 100%;
-    position: relative;
-    background-color:white;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    
+.Container {
+  height: 230px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
 .Hexagon1,
 .Hexagon2,
 .Hexagon3,
 .Hexagon4 {
-    height: 0;
-    width: 80px;
-    border-bottom: 35px solid #1284B3;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: relative;
+  height: 0;
+  width: 80px;
+  border-bottom: 35px solid #1284b3;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: relative;
 }
 
 .Hexagon1:before,
 .Hexagon2:before,
 .Hexagon3:before,
 .Hexagon4:before {
-    content: '';
-    height: 0;
-    width: 40px;
-    border-top: 35px solid #1284B3;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    position: absolute;
-    top:35px;
-    left: -20px;
+  content: '';
+  height: 0;
+  width: 40px;
+  border-top: 35px solid #1284b3;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  top: 35px;
+  left: -20px;
 }
 
-
 svg.Icons {
-    color: white;
-    position: absolute;
-    font-size: 2.5rem;
-    top:1rem;
-
+  color: white;
+  position: absolute;
+  font-size: 2.5rem;
+  top: 1rem;
 }
 
 .SoftSkill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
 }
 
 .SoftSkillDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
 }
 
-.SoftSkillDescription h1, p {
-    text-align: center;
-    margin:0;
-    font-size: 0.6rem;
+.SoftSkillDescription h1,
+p {
+  text-align: center;
+  margin: 0;
+  font-size: 0.6rem;
 }
 
-.SoftSkillDescription h1{
+.SoftSkillDescription h1 {
+  font-size: 0.8rem;
+}
+
+/* 481px—768px: iPads, Tablets */
+@media (min-width: 481px) {
+  .Container {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .SoftSkillDescription h1,
+  p {
     font-size: 0.8rem;
+    padding: 5px;
+  }
+  .SoftSkillDescription h1 {
+    font-size: 1rem;
+  }
 }
 
-/* Greater than 640 */
-@media(min-width:40rem){
+/* 1025px—1200px: Desktops, large screens */
+@media (min-width: 1025px) {
+  .Container {
+    max-width: 1000px;
+  }
+  .Hexagon1,
+  .Hexagon2,
+  .Hexagon3,
+  .Hexagon4 {
+    width: 160px;
+    border-bottom: 70px solid #1284b3;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+  }
 
-    .Container{
-        height: 140px;
-        flex-direction: row;
-    }
-    
-    .Hexagon1,
-    .Hexagon2,
-    .Hexagon3,
-    .Hexagon4 {
-        width: 160px;
-        border-bottom: 70px solid #1284B3;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-    }
-    
-    .Hexagon1:before,
-    .Hexagon2:before,
-    .Hexagon3:before,
-    .Hexagon4:before {
-        width: 80px;
-        border-top: 70px solid #1284B3;
-        border-left: 40px solid transparent;
-        border-right: 40px solid transparent;
-        top:70px;
-        left: -40px;
-    }
+  .Hexagon1:before,
+  .Hexagon2:before,
+  .Hexagon3:before,
+  .Hexagon4:before {
+    width: 80px;
+    border-top: 70px solid #1284b3;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    top: 70px;
+    left: -40px;
+  }
 
-    svg.Icons {
-        font-size: 5rem;
-        top:1.5rem;
-    }
+  svg.Icons {
+    font-size: 5rem;
+    top: 1.5rem;
+  }
 
-    .SoftSkillDescription {
-        padding-top: 90px;
+  .SoftSkillDescription {
+    padding-top: 90px;
+  }
 
-    }
+  .SoftSkillDescription h1,
+  p {
+    font-size: 1rem;
+    padding: 5px;
+  }
 
-    .SoftSkillDescription h1, p {
-        font-size: 1rem;
-    }
-
-    .SoftSkillDescription h1{
-        font-size: 1.3rem;
-    }
-
-
+  .SoftSkillDescription h1 {
+    font-size: 1.3rem;
+  }
 }
